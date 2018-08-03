@@ -19,12 +19,12 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     TimelineComponent,
     LeftSidebarComponent,
-    RightSidebarComponent,
-    FormsModule
+    RightSidebarComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [TwitterService],
   bootstrap: [AppComponent]

@@ -67,9 +67,13 @@ export class TwitterService {
   constructor() { }
 
   getTwitts() {
+    return this.invertArray();
+  }
+
+  invertArray() {
     let result = [];
     for(let i = this.twitts.length; i >= 1; i--){
-      result.push(this.twitts[i]);
+      result.push(this.twitts[i-1]);
     }
     return result;
   }

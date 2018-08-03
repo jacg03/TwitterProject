@@ -1,16 +1,16 @@
 <div role="main" aria-labelledby="content-main-heading" class="content-main top-timeline-tweetbox" id="timeline" tabindex="-1">
     <div class="stream-container conversations-enabled ">
         <div class="stream">
-            <ol class="stream-items " id="stream-items-id">
+            <ol class="stream-items" id="stream-items-id">
 
-                <li *ngFor="let tw of twitts" class=" stream-item stream-item">
+                <li *ngFor="let tw of twitts" class="stream-item stream-item py-1 px-2">
                     <div class="tweet dismissible-content original-tweet  tweet-has-context dismissible-content">
 
                         <div class="content">
                             <div class="stream-item-header">
 
-                                <a class="account-group " href="{{tw.username}}">
-                                    <img class="avatar" src="{{tw.image}}" alt="">
+                                <a class="account-group ">
+                                    <img class="avatar" src="{{ tw.image }}" alt="">
                                     <span class="FullNameGroup">
                                         <strong class="fullname show-popup-with-id u-textTruncate " >
                                             {{tw.nickname}}

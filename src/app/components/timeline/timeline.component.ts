@@ -10,8 +10,8 @@ import { Twitt } from '../../Interfaces/Twitt';
 export class TimelineComponent implements OnInit {
   twitts:Twitt[] = [];
   text:string;
-  constructor(private service:TwitterService) {
 
+  constructor(private service:TwitterService) {
   }
 
   ngOnInit() {
@@ -20,6 +20,7 @@ export class TimelineComponent implements OnInit {
 
   getTwitts() {
     this.twitts = this.service.getTwitts();
+    console.log(this.twitts);
   }
 
   postTwitt() {
