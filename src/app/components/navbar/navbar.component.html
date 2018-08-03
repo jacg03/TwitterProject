@@ -57,7 +57,9 @@
             <!--inicia ngModal -->
             <ng-template #content let-c="close" let-d="dismiss">
                 <div class="modal-header">
-                    <h4 class="text-center modal-title" id="modal-basic-title">Redactar un nuevo Tweet</h4>
+                    <div class="col-6 offset-3">
+                        <h4 class="text-center modal-title" id="modal-basic-title" style="font-weight: bold;">Redactar un nuevo Tweet</h4>
+                    </div>
                     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -71,30 +73,54 @@
 
                         </div>
                         <div class="col-11">
-                            <textarea name="" id="" cols="30" rows="10" style="padding: 15px; width: 100%; border-radius: 30px; height: 150px;"></textarea>
+                            <textarea name="" id="" cols="20" rows="10" class="taModal" placeholder="¿Que esta pasando?"></textarea>
                         </div>
                     </div>
-                </div>
-                <!--Footer del modal incluye botones del lado derecho e iconos -->
-                <div class="modalColor modal-footer">
-                    <div class="col-9">
-                        <ul class="uls navbar-nav mr-auto">
-                            <li class=" nav-item active">
-                                <a class="nav-link" href="#">
-                                    <i class="iconoModal fa fa-home"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-1 offset-1">
+                            <ul class="uls navbar-nav mr-auto">
+                                <li class=" nav-item active">
+                                    <a class="nav-link" href="#">
+                                        <i class="iconoModal fa fa-image"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-1">
+                                <ul class="uls navbar-nav mr-auto">
+                                    <li class=" nav-item active">
+                                        <a class="nav-link" href="#">
+                                            <i class="iconoModal fa fa-image"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="col-1">
+                                <ul class="uls navbar-nav mr-auto">
+                                    <li class=" nav-item active">
+                                        <a class="nav-link" href="#">
+                                            <i class="iconoModal fa fa-chart-bar"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="col-5">
+                                <ul class="uls navbar-nav mr-auto">
+                                    <li class=" nav-item active">
+                                        <a class="nav-link" href="#">
+                                            <i class="iconoModal fa fa-map-marker-alt"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btnTweet2 btn btn-outline-primary">+</button>
+                            <button class="btnTweet2 btn btn-outline-primary" type="button" id="button-addon2" (click)="c('Save click')">
+                                Twittear
+                            </button>
+                        </div>
+
                     </div>
-                    <div class="col-3">
-                        <button type="button" class="btnTweet2 btn btn-outline-primary">+</button>
-                        <button class="btnTweet btn btn-outline-primary" type="button" id="button-addon2" (click)="c('Save click')">
-                            Twittear
-                        </button>
-                    </div>
-
-
-
                 </div>
             </ng-template>
 
