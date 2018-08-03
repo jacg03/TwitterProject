@@ -3,7 +3,7 @@
         <div class="stream">
             <ol class="stream-items" id="stream-items-id">
 
-                <li *ngFor="let tw of twitts" class="stream-item stream-item py-1 px-2">
+                <li *ngFor="let tw of twitts" class="stream-item stream-item py-1 px-1">
                     <div class="tweet dismissible-content original-tweet  tweet-has-context dismissible-content">
 
                         <div class="content">
@@ -20,7 +20,7 @@
                                     <span class="UserNameBreak">&nbsp;</span>   
                                     </span>
 
-                                    <span class="username u-dir u-textTruncate" dir="ltr">@<b>{{tw.username}}</b></span>
+                                    <span class="username u-dir u-textTruncate" dir="ltr"><b>{{tw.username}}</b></span>
                                 </a>
 
                                 <small class="time">
