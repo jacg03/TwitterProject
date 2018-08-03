@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.ourcomponent {
+    height: 92vh;
+}
+
+app-left-sidebar, app-right-sidebar {
+    background-color: white;
+}
+
+app-timeline {
+    background-color: aliceblue;
+}

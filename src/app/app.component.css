@@ -1,0 +1,9 @@
+.ournav {
+    height: 8vh;
+    background-color: rgb(76, 76, 250);
+}
+
+.container-fluid {
+    background-color: rgb(220, 218, 218);
+    height: 100vh;
+}
