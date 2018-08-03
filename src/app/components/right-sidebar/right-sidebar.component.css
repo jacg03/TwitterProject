@@ -1,8 +1,13 @@
 .imgRightside {
-    height: 60px;
+    height: 55px;
     width: 60px;
 }
 
 .btnSeguir{
     width: 80px;
+    border-radius: 25px;
+}
+
+.PE{
+    font-size: 14px;
 }
