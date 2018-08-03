@@ -48,5 +48,6 @@ export class NavbarComponent implements OnInit {
       text: this.text
     };
     this.sevice.postTwitt(data);
+    this.text ="";
   }
 }
