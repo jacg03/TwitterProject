@@ -81,5 +81,4 @@ export class TwitterService {
   postTwitt(data:Twitt) {
     this.twitts.push(data);
   }
-
 }

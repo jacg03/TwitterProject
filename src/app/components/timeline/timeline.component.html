@@ -3,7 +3,7 @@
         <div class="stream">
             <ol class="stream-items" id="stream-items-id">
 
-                <li *ngFor="let tw of twitts" class="stream-item stream-item py-1 px-1">
+                <li *ngFor="let tw of getTwitts()" class="stream-item stream-item py-1 px-1">
                     <div class="tweet dismissible-content original-tweet  tweet-has-context dismissible-content">
 
                         <div class="content">

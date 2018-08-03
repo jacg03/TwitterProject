@@ -48,14 +48,14 @@
             <button class="btnSearch btn btn-outline-secondary" type="button" id="button-addon2">
                 <i class="fa fa-search"></i>
             </button>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Standaard_Nederlandsche_SS.svg/1200px-Standaard_Nederlandsche_SS.svg.png"
+            <img src="https://scontent.fntr4-1.fna.fbcdn.net/v/t1.0-9/23844474_1733973696635090_7460941906611218652_n.jpg?_nc_cat=0&oh=08d05854c205d00f10b61ff3cea5b06d&oe=5BCD242E"
                 class="rounded-circle imgChat" alt="Cinque Terre">
             <button class="btnTweet btn btn-outline-primary" type="button" id="button-addon2" (click)="open(content)">
                 Twittear
             </button>
 
             <!--inicia ngModal -->
-            <ng-template #content let-c="close" let-d="dismiss">
+            <ng-template #content let-c="close" let-d="dismiss" id="modal">
                 <div class="modal-header">
                     <h4 class="text-center modal-title" id="modal-basic-title">Redactar un nuevo Tweet</h4>
                     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
@@ -71,7 +71,7 @@
 
                         </div>
                         <div class="col-11">
-                            <textarea name="" id="" cols="30" rows="10" style="padding: 15px; width: 100%; border-radius: 30px; height: 150px;"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" style="padding: 15px; width: 100%; border-radius: 30px; height: 150px;" [(ngModel)]="text"></textarea>
                         </div>
                     </div>
                 </div>
