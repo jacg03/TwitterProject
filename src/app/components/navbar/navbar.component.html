@@ -1,3 +1,105 @@
-<div class="col-md-12">
-  Holaaaaa
-</div>
+<!--Comienzaz NAV -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top row">
+  <!--Inician iconos del NAV -->
+  <div class="col-5">
+      <ul class="uls navbar-nav mr-auto">
+          <li class="lis nav-item active">
+              <a class="nav-link" href="#">
+                  <i class="icono fa fa-home">
+                      <p class="iconText">Home</p>
+                  </i>
+              </a>
+          </li>
+          <li class="lis nav-item active">
+              <a class="nav-link" href="#">
+                  <i class="icono fa fa-bolt">
+                      <p class="iconText">Momentos</p>
+                  </i>
+              </a>
+          </li>
+          <li class="lis nav-item active">
+              <a class="nav-link" href="#">
+                  <i class="icono fa fa-bell">
+                      <p class="iconText">Notificaciones</p>
+                  </i>
+              </a>
+          </li>
+          <li class="lis nav-item active">
+              <a class=" nav-link" href="#">
+                  <i class="icono efecto fa fa-envelope">
+                      <p class="iconText">Mensajes</p>
+                  </i>
+              </a>
+          </li>
+      </ul>
+      <!--Terminan iconos del NAV -->
+  </div>
+  <!--Icono Tweeter (pajarito) -->
+  <div class="col-2">
+      <p class="twitterIconPlace">
+          <img class="twitterIcon" src="https://www.sketchappsources.com/resources/source-image/twitterlogo_1x.png">
+      </p>
+  </div>
+  <!--Tools y Search de la parte derecha de la nav -->
+  <div class="col-5 offset-1">
+      <input type="text" class="inputSearch " placeholder="" aria-describedby="button-addon2">
+      <button class="btnSearch btn btn-outline-secondary" type="button" id="button-addon2">
+          <i class="fa fa-search"></i>
+      </button>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Standaard_Nederlandsche_SS.svg/1200px-Standaard_Nederlandsche_SS.svg.png"
+          class="rounded-circle imgChat" alt="Cinque Terre">
+      <button class="btnTweet btn btn-outline-primary" type="button" id="button-addon2" (click)="open(content)">
+          Twittear
+      </button>
+
+      <!--inicia ngModal -->
+      <ng-template #content let-c="close" let-d="dismiss">
+          <div class="modal-header">
+              <h4 class="text-center modal-title" id="modal-basic-title">Redactar un nuevo Tweet</h4>
+              <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <!--Body del Modal Text area e imagen de usuario-->
+          <div class="modalColor modal-body">
+              <div class="row">
+                  <div class="col-1">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Standaard_Nederlandsche_SS.svg/1200px-Standaard_Nederlandsche_SS.svg.png"
+                          class="rounded-circle imgChat" alt="Cinque Terre">
+
+                  </div>
+                  <div class="col-11">
+                      <textarea name="" id="" cols="30" rows="10" style="padding: 15px; width: 100%; border-radius: 30px; height: 150px;"></textarea>
+                  </div>
+              </div>
+          </div>
+          <!--Footer del modal incluye botones del lado derecho e iconos -->
+          <div class="modalColor modal-footer">
+              <div class="col-9">
+                  <ul class="uls navbar-nav mr-auto">
+                      <li class=" nav-item active">
+                          <a class="nav-link" href="#">
+                              <i class="iconoModal fa fa-home"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                  <button type="button" class="btnTweet2 btn btn-outline-primary">+</button>
+                  <button class="btnTweet btn btn-outline-primary" type="button" id="button-addon2" (click)="c('Save click')">
+                      Twittear
+                  </button>
+              </div>
+
+
+
+          </div>
+      </ng-template>
+
+      <pre>{{closeResult}}</pre>
+      <!--Termina ngModal -->
+
+  </div>
+</nav>
+<!--Termina NAV -->
