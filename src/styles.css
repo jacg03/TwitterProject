@@ -1,11 +1,7 @@
 .ourcomponent {
-    height: 92vh;
+    height: 100%;
 }
 
 app-left-sidebar, app-right-sidebar {
     background-color: white;
-}
-
-app-timeline {
-    background-color: aliceblue;
 }

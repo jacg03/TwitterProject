@@ -8,6 +8,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TwitterService } from './services/twitter.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FormsModule
   ],
-  providers: [],
+  providers: [TwitterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
