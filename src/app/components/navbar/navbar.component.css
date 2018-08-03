@@ -1,0 +1,119 @@
+.uls{
+    margin-left: 35px;
+}
+
+.as{
+    margin-left: 15px;
+    display: flex;
+}
+
+.iconText{
+    margin-left: 5px; 
+    display: unset;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.icono{
+    font-size: 24px;
+    color:  rgb(32, 82, 248);    
+    padding-top: 1px;
+}
+
+.lis:hover{
+    color:  rgb(32, 82, 248);    
+}
+
+.twitterIcon{
+    margin: auto;
+    width: 30px;
+    height: 20px;
+}
+
+.twitterIconPlace{
+    text-align: center;
+}
+
+.lis{
+    margin-left: 20px;
+}
+
+.inputSearch{
+    width: 30%;
+    height: 37px;
+    border-radius: 40px 0px 0px 40px;
+    -moz-border-radius: 40px 0px 0px 40px;
+    -webkit-border-radius: 40px 0px 0px 40px;
+    border: 0px solid #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+.btnSearch{
+    border-radius: 0px 40px 40px 0px;
+-moz-border-radius: 0px 40px 40px 0px;
+-webkit-border-radius: 0px 40px 40px 0px;
+vertical-align: baseline;
+}
+
+.imgChat {
+    height: 35px;
+    width: 35px;
+    margin: inherit;
+    margin-bottom: 5px;
+}
+
+.btnTweet{
+    margin: inherit;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    padding: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.btnTweet:hover{
+    margin: inherit;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    padding: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #17a2b8;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.btnTweet2{
+    margin: inherit;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI",Arial,sans-serif;
+
+}
+
+.modalColor{
+    background-color: #1DA1F2; 
+    background: rgba(29,161,242,0.1);
+}
+
+.iconoModal{
+    font-size: 40px;
+    color:  rgb(32, 82, 248);    
+    padding-top: 1px;
+}
